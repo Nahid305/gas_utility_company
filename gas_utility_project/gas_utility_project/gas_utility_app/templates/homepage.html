@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+</head>
+<body>
+    <h1>Welcome to the Gas Utility Service Portal!</h1>
+    <p><a href="{% url 'submit_request' %}">Submit a Service Request</a></p>
+    <p><a href="{% url 'track_request' request_id=1 %}">Track Your Request (Example)</a></p>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{% extends "base_generic.html" %}
+{% block content %}
+    <h1>Service Requests</h1>
+    <ul>
+        {% for req in requests %}
+            <li>{{ req.service_type }} - {{ req.status }} <a href="{% url 'resolve_request' req.id %}">Resolve</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

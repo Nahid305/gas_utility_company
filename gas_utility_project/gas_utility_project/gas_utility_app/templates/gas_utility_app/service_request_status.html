@@ -1,0 +1,9 @@
+{% extends "base_generic.html" %}
+{% block content %}
+    <h1>Request Status</h1>
+    <p>Service Type: {{ request.service_type }}</p>
+    <p>Description: {{ request.description }}</p>
+    <p>Status: {{ request.status }}</p>
+    <p>Created at: {{ request.created_at }}</p>
+    <p>Resolved at: {{ request.resolved_at }}</p>
+{% endblock %}
